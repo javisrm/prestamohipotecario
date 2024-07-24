@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DocumentFormulario de contacto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-dark">
+  <div class="container p-2">
+    <div class="card mx-3 mt-n5 shadow-lg" style="
+          border-radius: 10px;
+          border-left: 8px #007bff solid;
+          border-right: none;
+          border-bottom: none;
+        ">
+      <div class="card-body">
+        <h1 class="mb-5 text-primary text-uppercase text-center">
+          Formulario de contacto
+        </h1>
+        <form action="" id="fcontacto" onsubmit="enviarDatos(event)" method="get" target="_self">
+          <div class="row">
+            <div class="col">
+              <label class="form-label" for="fnombre">Nombre</label>
+              <input class="form-control" type="text" id="fnombre" />
+            </div>
+
+            <div class="col">
+              <label class="form-label" for="fapellido">Apellido</label>
+              <input class="form-control" type="text" id="fapellido" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label class="form-label bold" for="fntelefono">Telefono</label>
+              <input class="form-control " type="text" id="fntelefono" />
+            </div>
+            <div class="col">
+              <label class="form-label" for="fcorreo">Correo Electronico</label>
+              <input class="form-control" type="text" id="fcorreo" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label class="form-label" for="fpais">Pais</label>
+              <input class="form-control" type="text" id="fpais" />
+            </div>
+            <div class="col">
+              <label class="form-label" for="fciudad">Ciudad</label>
+              <input class="form-control" type="text" id="fciudad" />
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary mt-3">
+            Guardar
+          </button>
+        </form>
+          <button type="submit" class="btn btn-primary mt-3" onclick="window.location.href='../index.html'">
+            Atras
+          </button>
+
+          <button type="submit" class="btn btn-primary mt-3" onclick="listarContactos()">
+            Listar
+          </button>
+        
+        <div id="tablaContacto">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../vistas/contacto.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
